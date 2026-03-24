@@ -40,7 +40,7 @@ public class ProductFileStorage {
 
                 Long id = Long.parseLong(parts[0].trim());
                 String name = parts[1].trim();
-                Double price = Double.parseDouble(parts[2].trim());
+                double price = Double.parseDouble(parts[2].trim());
 
                 products.add(new Product(id, name, price));
             }
@@ -55,7 +55,7 @@ public class ProductFileStorage {
         File file = getFile();
         file.getParentFile().mkdirs();
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file, true))) {
             for (Product p : products) {
                 writer.write(p.getId() + "," + p.getName() + "," + p.getPrice());
                 writer.newLine();

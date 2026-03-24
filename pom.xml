@@ -54,6 +54,7 @@
     </dependencies>
 
     <build>
+        <finalName>programa-sd</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
