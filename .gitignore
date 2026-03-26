@@ -34,6 +34,7 @@ fabric.properties
 
 # Package Files #
 *.jar
+*.jar.*
 *.war
 *.nar
 *.ear

@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface ProductService {
     List<ProductDTO> getAllProducts();
+
     ProductResponseDTO saveProduct(ProductRequestDTO requestDTO);
 }

@@ -3,11 +3,9 @@ package co.edu.uptc.api_rest.controller;
 import co.edu.uptc.api_rest.dto.ProductDTO;
 import co.edu.uptc.api_rest.dto.ProductRequestDTO;
 import co.edu.uptc.api_rest.dto.ProductResponseDTO;
-import co.edu.uptc.api_rest.model.Product;
 import co.edu.uptc.api_rest.service.ProductService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
